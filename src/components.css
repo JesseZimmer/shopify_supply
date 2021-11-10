@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply inline-block px-5 py-3 mx-auto my-0 border-2 border-solid font-title text-mlg text-secondary border-secondary whitespace-nowrap rounded-xl hover:bg-secondary hover:text-white hover:shadow sm:text-lg sm:px-6;
+  }
+  .btn-primary {
+    @apply px-6 border-0 text-secondary bg-primary hover:text-secondary hover:primary-gradient;
+  }
+  .btn-secondary {
+    @apply px-6 text-white border-shop-pay-purple text-mbase sm:text-base hover:border-primary hover:bg-shop-pay-purple bg-shop-pay-purple;
+  }
+  .btn-link {
+    @apply relative pb-2 border-0 secondary-underline p-xs text-secondary bg-none hover:text-secondary hover:bg-transparent hover:shadow-none hover:after:bg-primary;
+  }
+  .btn-link-secondary {
+    @apply font-normal text-mbase sm:text-base font-paragraph py-xs after:bg-green-lime hover:after:bg-secondary;
+  }
+  .btn-link-white {
+    @apply text-white hover:text-white;
+  }
+  .btn-close-icon {
+    @apply p-0 border-0;
+  }
+  .btn-disabled {
+    @apply bg-none border-blue-sky text-blue-sky;
+  }
+  .primary-gradient {
+    @apply bg-gradient-to-tr from-primary-start to-primary-end;
+  }
+  .blob-background {
+    @apply bg-left-bottom bg-no-repeat bg-contain;
+    background-position: 0 184%;
+  }
+  .secondary-underline {
+    @apply after:absolute after:bottom-0 after:left-0  after:block after:w-full after:h-xs after:bg-secondary after:rounded-xl after:content-[''];
+  }
+}
+
+/* stylelint-disable */
+.blob svg path {
+  animation: blob 10s linear infinite;
+}
+@keyframes blob {
+  0% {
+    d: path(
+      'M93.659 124.771C118.944 87.6801 110.054 26.1854 150.257 6.21521C189.847 -13.4511 235.202 18.4753 276.638 33.8774C317.953 49.2341 361.682 61.6066 390.044 95.3451C420.377 131.428 442.913 178.163 437.275 224.963C431.787 270.519 394.204 303.778 361.106 335.558C332.178 363.335 299.952 391.627 260.005 395.178C222.743 398.49 195.224 361.855 158.749 353.545C113.138 343.154 55.613 374.008 22.4156 341.05C-9.85881 309.007 -1.75341 251.518 12.4756 208.322C24.9298 170.514 71.2366 157.662 93.659 124.771Z'
+    );
+  }
+  25% {
+    d: path(
+      'M66.0244 93.1673C91.3096 56.0767 110.079 24.0076 150.282 4.03734C189.872 -15.6289 226.564 47.5979 268 63C309.315 78.3567 361.707 59.4288 390.069 93.1673C420.402 129.25 442.938 175.985 437.3 222.785C431.812 268.341 363.098 270.22 330 302C301.072 329.777 299.977 389.449 260.03 393C222.768 396.312 205.475 362.31 169 354C123.389 343.609 55.6374 371.83 22.44 338.872C-9.83443 306.829 -1.72903 249.34 12.5 206.144C24.9542 168.336 43.602 126.058 66.0244 93.1673Z'
+    );
+  }
+  50% {
+    d: path(
+      'M88 88C113.285 50.9094 101.079 27.0079 141.282 7.03765C180.872 -12.6286 244.564 17.5979 286 33C327.315 48.3567 352.707 62.4291 381.069 96.1676C411.402 132.25 433.938 178.985 428.3 225.785C422.812 271.341 391.098 296.22 358 328C329.072 355.777 297.947 358.449 258 362C220.738 365.312 177.757 387.31 141.282 379C95.6706 368.609 100.197 334.958 67 302C34.7256 269.957 -10.729 252.34 3.5 209.144C15.9542 171.336 65.5776 120.891 88 88Z'
+    );
+  }
+  75% {
+    d: path(
+      'M51.9644 93.1673C77.2496 56.0767 96.019 24.0076 136.222 4.03733C175.812 -15.6289 212.504 47.5979 253.94 63C295.255 78.3567 347.647 59.4288 376.009 93.1673C406.342 129.25 407.638 174.2 402 221C396.512 266.556 379.098 299.22 346 331C317.072 358.777 284.947 356.449 245 360C207.738 363.312 172.697 384.31 136.222 376C90.611 365.609 41.5774 371.83 8.37999 338.872C-23.8944 306.829 47.771 248.196 62 205C74.4542 167.192 29.542 126.058 51.9644 93.1673Z'
+    );
+  }
+  100% {
+    d: path(
+      'M93.659 124.771C118.944 87.6801 110.054 26.1854 150.257 6.21521C189.847 -13.4511 235.202 18.4753 276.638 33.8774C317.953 49.2341 361.682 61.6066 390.044 95.3451C420.377 131.428 442.913 178.163 437.275 224.963C431.787 270.519 394.204 303.778 361.106 335.558C332.178 363.335 299.952 391.627 260.005 395.178C222.743 398.49 195.224 361.855 158.749 353.545C113.138 343.154 55.613 374.008 22.4156 341.05C-9.85881 309.007 -1.75341 251.518 12.4756 208.322C24.9298 170.514 71.2366 157.662 93.659 124.771Z'
+    );
+  }
+}

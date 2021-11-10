@@ -1,0 +1,9 @@
+export {default as BackgroundBlob} from './BackgroundBlob.png';
+export {default as BackgroundBlob480} from './BackgroundBlob-480w.png';
+export {default as BestSellerBadgeImg} from './BestSellerBadge.png';
+export {default as SoldOutBadge} from './SoldOutBadge.png';
+export {default as TheButton} from './TheButton.png';
+export {default as TheButton480} from './TheButton-480w.png';
+export {default as EnviromentImage} from './EnviromentImage.png';
+export {default as SocialShopifySupply} from './SocialShopifySupply.png';
+export {default as ButtonPoster} from './ButtonPoster.png';
