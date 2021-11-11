@@ -20,7 +20,7 @@ export default function Header({
 
   const showNavCSS = showNav ? 'translate-y-5 sm:translate-y-6' : '';
   const altWrapperCSS = altCSS
-    ? 'bg-white  text-secondary border-secondary'
+    ? 'bg-green  text-secondary border-secondary'
     : 'bg-transparent text-white border-white';
   const altLogoCSS = altCSS ? 'text-black' : 'text-white';
 
